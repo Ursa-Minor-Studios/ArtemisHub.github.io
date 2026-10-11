@@ -1,4 +1,9 @@
 # Artemis Hub
+![Static Badge](https://img.shields.io/badge/Version%20-%201.1.4%20-%20green)
+![Static Badge](https://img.shields.io/badge/Status%20-Released-%20green)
+![Static Badge](https://img.shields.io/badge/Languages-%20HTML,%20CSS,%20JavaScript-%20orange)
+![Static Badge](https://img.shields.io/badge/July%204%2C%202026%20--%20-%20blue)
+
 HTML, CSS, and JS website for space enthustists who want centralized information on the Artemis Program.
 <br>
 
