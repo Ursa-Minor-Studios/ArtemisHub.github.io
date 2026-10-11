@@ -1,5 +1,16 @@
 # Changelog
 
+## October 11, 2025 [v1.4.0]
+I originally planned **v1.3.0** to be the last major update to this site since I'm only developing it for the Stardance challenge (Still planned on maintaining it though), but the challenge is extended to October 31, so might as well add new content until then!
+### Removed
+* Side Bubble navbar (Content got moved to a bottom navigation bar)
+### Added
+* Bottom navbar
+* Blogs Page
+* First Artemis Blog
+
+***
+
 ## August 20, 2026 [v1.3.2]
 ### Added
 * Dropdowns for Artemis II page
