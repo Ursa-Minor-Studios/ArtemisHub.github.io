@@ -1,665 +1,729 @@
 /* Variables */
 :root {
-    --primaryFont:"GC Protage";
-    --h1FontSize: 4em;
-    --h2FontSize: 2em;
-    --h3FontSize: 1.5em;
-    --pFontSize: 0.75em;
-    --primaryBgColor: #222;
-    --primaryTextColor:#f1f1f1;
-    --primaryUIColor: #111;
+  --primaryFont: "GC Protage";
+  --h1FontSize: 4em;
+  --h2FontSize: 2em;
+  --h3FontSize: 1.5em;
+  --pFontSize: 0.75em;
+  --primaryBgColor: #222;
+  --primaryTextColor: #f1f1f1;
+  --primaryUIColor: #111;
 }
 
 /* Gets rid of default margins and padding */
 * {
-    margin:0px;
-    padding:0px;
+  margin: 0px;
+  padding: 0px;
 }
 
 /* Custom fonts */
 @font-face {
-    font-family: "GC Protage";
-    src: url("../Assets/Fonts/GcProtageDemoMedium-0vppR.ttf") format("ttf");
+  font-family: "GC Protage";
+  src: url("../Assets/Fonts/GcProtageDemoMedium-0vppR.ttf") format("ttf");
 }
 
 /* Styles the body */
 body {
-    background-color: var(--primaryBgColor);
+  background-color: var(--primaryBgColor);
 }
 
 details {
-    margin:10px;
-    border-bottom: 1px solid white;
+  margin: 10px;
+  border-bottom: 1px solid white;
 }
 
 details h4 {
-    color:white;
-    padding:5px;
-    font-family: "GC Protage", serif;
+  color: white;
+  padding: 5px;
+  font-family: "GC Protage", serif;
 }
 
 details p {
-    font-size: var(--pFontSize);
-    text-align: left;
+  font-size: var(--pFontSize);
+  text-align: left;
 }
 
 figcaption {
-    color: var(--primaryTextColor);
-    font-family: "GC Protage", sans-serif;
-    padding: 5px;
-    font-size: var(--pFontSize);
+  color: var(--primaryTextColor);
+  font-family: "GC Protage", sans-serif;
+  padding: 5px;
+  font-size: var(--pFontSize);
 }
 
 h2 {
-    color: var(--primaryTextColor);
-    font-family: "GC Protage", serif;
-    text-align: center;
+  color: var(--primaryTextColor);
+  font-family: "GC Protage", serif;
+  text-align: center;
 }
 
 p {
-    font-size: var(--pFontSize);
-    font-family: "GC Protage", sans-serif;
+  font-size: var(--pFontSize);
+  font-family: "GC Protage", sans-serif;
 }
 
 summary {
-    color: var(--primaryTextColor);
-    font-family: "GC Protage", serif;
-    cursor: pointer;
+  color: var(--primaryTextColor);
+  font-family: "GC Protage", serif;
+  cursor: pointer;
 }
 
-summary p
-
-ul .timeline {
-    list-style-type: none;
+summary p ul .timeline {
+  list-style-type: none;
+  transform: translateX(25%);
 }
 
 ul.timeline hr {
-    width: 75%;
+  width: 75%;
 }
 
-
 ul.timeline li {
-    font-size: large;
-    line-height: 3em;
-    text-align: center;
+  font-size: large;
+  line-height: 3em;
+  text-align: left;
+  transform: translate(10dvw);
+  max-width: 80dvw;
 }
 
 /* Classes */
 
 /* Styles Banner Strips */
 .bannerStrip {
-    width:100%;
-    height:30dvh;
-    background-position: center;
+  width: 100%;
+  height: 30dvh;
+  background-position: center;
 }
 
 /* Styles main headings in Banner Strips */
 .bannerStrip h1 {
-    color:var(--primaryTextColor);
-    font-family: var(--primaryFont), serif;
-    text-align: center;
-    padding:1%;
-    font-size: var(--h1FontSize);
+  color: var(--primaryTextColor);
+  font-family: var(--primaryFont), serif;
+  text-align: center;
+  padding: 1%;
+  font-size: var(--h1FontSize);
 }
 
 /* Styles subheadings in Banner Strips */
 .bannerStrip h2 {
-    color:var(--primaryTextColor);
-    font-family: var(--primaryFont), serif;
-    text-align: center;
-    font-size: var(--h2FontSize);
+  color: var(--primaryTextColor);
+  font-family: var(--primaryFont), serif;
+  text-align: center;
+  font-size: var(--h2FontSize);
 }
 
 /* Styles images in Banner Strips */
-.bannerStrip img{
-    object-fit:cover;
-    width:100%;
-    height:30dvh;
-    position:relative;
+.bannerStrip img {
+  object-fit: cover;
+  width: 100%;
+  height: 30dvh;
+  position: relative;
+}
+
+.blog {
+  background-color: #333;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  padding: 1%;
+  width: 25%;
+}
+
+.blog h2 {
+  font-size: 1em;
+  padding: 1%;
+}
+
+.blog h3 {
+  color: var(--primaryTextColor);
+  font-size: 0.75em;
+  text-align: center;
+}
+
+.blog a img {
+  height: fit-content;
+  width: 100%;
+}
+
+.blog p {
+  font-size: var(--pFontSize);
+  text-align: left;
+}
+
+.blogContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-e;
+  margin: 2%;
+}
+
+.bottomNavBar {
+  background-color: #333;
+}
+
+.bottomNavBar ul {
+  display: flex;
+  flex-direction: row;
+  height: fit-content;
+  justify-content: space-evenly;
+  padding: 1%;
+  position: sticky;
+  max-width: 100%;
+  z-index: 999;
+}
+
+.bottomNavBar ul li {
+  list-style-type: none;
+}
+
+.bottomNavBar ul li a {
+  color: var(--primaryTextColor);
+  text-decoration: none;
 }
 
 .collapsable details {
-    width: 90dvw;
-    border: none;
-    
+  width: 90dvw;
+  border: none;
 }
 
 .collapsable summary {
-    font-size: var(--h2FontSize);
-    font-weight: bold;
-    text-align: left;
+  font-size: var(--h2FontSize);
+  font-weight: bold;
+  text-align: left;
 }
 
 .collapsable details p {
-    font-size: var(--pFontSize);
+  font-size: var(--pFontSize);
 }
 
 .collapsable ul li {
-    color: var(--primaryTextColor);
+  color: var(--primaryTextColor);
 }
 
 /* Styles each card */
 .card {
-    max-width: 560px;
-    padding-left: 1%;
+  max-width: 560px;
+  padding-left: 1%;
 }
 
 /* Styles card headings */
 .card h3 {
-    color: var(--primaryTextColor);
-    text-align: center;
-    font-family: var(--primaryFont), serif;
-    font-size: var(--h3FontSize);
+  color: var(--primaryTextColor);
+  text-align: center;
+  font-family: var(--primaryFont), serif;
+  font-size: var(--h3FontSize);
 }
 
 /* Styles card descriptions */
 .card p {
-    color:var(--primaryTextColor);
-    font-family: var(--primaryFont), sans-serif;
-    text-overflow: ellipsis;
-    overflow:hidden;
-    max-width: 560px;
-    white-space: nowrap !important;
-    font-size: var(--pFontSize);
+  color: var(--primaryTextColor);
+  font-family: var(--primaryFont), sans-serif;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 560px;
+  white-space: nowrap !important;
+  font-size: var(--pFontSize);
 }
 
 /* Styles the card iframes */
-.card iframe, img {
-    width:560px;
-    height:315px;
-    border-radius: 10px;
+.card iframe,
+img {
+  width: 560px;
+  height: 315px;
+  border-radius: 10px;
 }
 
 /* Styles the Carousel */
-.carousel{
-    display:flex;
-    flex-direction: row;
-    overflow-x: scroll;
-    overflow-y:hidden;
-    scrollbar-color: #444 var(--primaryBgColor);
-    scrollbar-width: thin;
-    background-color: #4444441c;
-    padding-bottom: 1%;
+.carousel {
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  scrollbar-color: #444 var(--primaryBgColor);
+  scrollbar-width: thin;
+  background-color: #4444441c;
+  padding-bottom: 1%;
 }
 
 .hubContainer {
-    width:10%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position:fixed;
+  width: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
 }
 
 .hubBubble {
-    width: 50%;
-    height:auto;
-    padding: 5px;
+  width: 50%;
+  height: auto;
+  padding: 5px;
 }
 
 .hubBubble:hover {
-    width:60%;
+  width: 60%;
 }
 
 .missionOverview {
-    display:flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width:90dvw;
-    margin:2%;
-    margin-left:auto;
-    margin-right:auto;
-    background-color: var(--primaryUIColor);
-    border-radius: 10px;
-    padding:1%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 90dvw;
+  margin: 2%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--primaryUIColor);
+  border-radius: 10px;
+  padding: 1%;
 }
 
-.missionOverview h3, p {
-    color: var(--primaryTextColor);
-    text-align: center;
-
+.missionOverview h3,
+p {
+  color: var(--primaryTextColor);
+  text-align: center;
 }
-
-
 
 .missionOverviewBlock {
-    display: grid;
-    flex-direction: column;
-    justify-content: center;
-    margin:1%;
-    border: 2px solid #f5f5f5;
-    width:25%;
-    padding: 5px;
-    flex-wrap: nowrap;
+  display: grid;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1%;
+  border: 2px solid #f5f5f5;
+  width: 25%;
+  padding: 5px;
+  flex-wrap: nowrap;
 }
 
-.missionOverviewBlock h3, p {
-    color: var(--primaryTextColor);
-    text-align: center;
-
+.missionOverviewBlock h3,
+p {
+  color: var(--primaryTextColor);
+  text-align: center;
 }
 
 .missionOverviewRow {
-    display: flex;
-    flex-direction: row;
-    margin:5%;
+  display: flex;
+  flex-direction: row;
+  margin: 5%;
 }
 
 .missionOverviewContent {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .missionOverviewContent p {
-    font-size: var(--pFontSize);
-    font-family: "GC Protage", sans-serif;
+  font-size: var(--pFontSize);
+  font-family: "GC Protage", sans-serif;
 }
 
 .rightContent {
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
 }
 
 .rightSidePanelLayout {
-    width:70dvw;
-    margin-left:20dvw;
-    padding:10px;
-    margin-top:10px;
-    display:flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    background-repeat: no-repeat;
-    background-size: 100%;
+  width: 70dvw;
+  margin-left: 20dvw;
+  padding: 10px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 .rightSidePanelLayout h2 {
-    font-size: 1.5em;
-    text-align: center;
+  font-size: 1.5em;
+  text-align: center;
 }
 
 .rightSidePanelLayout h3 {
-    font-size: 1em;
-    color:var(--primaryTextColor);
-    text-align: center;
-    white-space: nowrap;
+  font-size: 1em;
+  color: var(--primaryTextColor);
+  text-align: center;
+  white-space: nowrap;
 }
 
 .rightContent h4 {
-    font-size: 1em;
-    color:var(--primaryTextColor);
-    text-align: center;
-    padding-top: 30px;
+  font-size: 1em;
+  color: var(--primaryTextColor);
+  text-align: center;
+  padding-top: 30px;
 }
 
 .rightSidePanelLayout p {
-    font-size: 1em;
+  font-size: 1em;
 }
 
 .rightSidePanelLayout .rightContent p {
-    font-size: 0.75em;
+  font-size: 0.75em;
 }
 
 .rightSidePanelLayout .leftContent {
-    width:80%;
-    display: flex;
-    flex-direction: column;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
 }
 
 .rightSidePanelLayout .rightContent {
-    width:20%;
-    display:flex;
-    flex-direction: column;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
 }
 
 .row {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 /* Styles the spacecraft container */
 .sidePanel {
-    width:25dvw;
-    background-color: var(--primaryUIColor);
-    margin:2%;
-    padding:10px;
-    border-radius: 10px;
-    overflow: hidden;
+  width: 25dvw;
+  background-color: var(--primaryUIColor);
+  margin: 2%;
+  padding: 10px;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .sidePanel h2 {
-    border-bottom: 2px solid #f5f5f5;
+  border-bottom: 2px solid #f5f5f5;
 }
 
 .sidePanelRow {
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between;
-    border-bottom: 2px solid #f5f5f5;
-    border-bottom-style: solid;
-    padding:5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 2px solid #f5f5f5;
+  border-bottom-style: solid;
+  padding: 5%;
 }
 
 .sidePanelRow p {
-    font-size: var(--pFontSize);
-    font-family: "GC Protage", sans-serif;
+  font-size: var(--pFontSize);
+  font-family: "GC Protage", sans-serif;
 }
 
 .sidePanelRow h3 {
-    color: var(--primaryTextColor);
+  color: var(--primaryTextColor);
 }
 
 ul.status::marker {
-    color: green;
+  color: green;
 }
 
 /* Styles the trajectory container */
-.trajectoryContainer{
-    display:flex;
-    flex-direction: column;
-    width:fit-content;
+.trajectoryContainer {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
 }
 
 /* Styles the image in the trajectory container */
 .trajectoryContainer img {
-    object-fit: cover;
+  object-fit: cover;
 }
 
 /* ID's */
 
 #ArtemisIFact {
-    border-bottom: 1px solid white;
-    font-size: var(--h3FontSize);
+  border-bottom: 1px solid white;
+  font-size: var(--h3FontSize);
 }
 
 #ArtemisIIFact {
-    border-bottom: 1px solid white;
-    font-size: var(--h3FontSize);
+  border-bottom: 1px solid white;
+  font-size: var(--h3FontSize);
 }
 
 #ArtemisIIIFact {
-    border-bottom: 1px solid white;
-    font-size: var(--h3FontSize);
+  border-bottom: 1px solid white;
+  font-size: var(--h3FontSize);
 }
 
 /* Styles the countdown container */
 #Countdown {
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 /* Styles the countdown title */
 #CountdownContainer {
-    display:flex;
-    flex-direction: column;
-    background-color: var(#222);
-    top:0;
-    position:sticky;
-    background-color: var(--primaryUIColor);
+  display: flex;
+  flex-direction: column;
+  background-color: var(#222);
+  top: 0;
+  position: sticky;
+  background-color: var(--primaryUIColor);
 }
 
 #CountdownContainer h2 {
-    text-align:center;
-    font-size:1.25em;
-    color:var(--primaryTextColor);
-    font-family: "GC Protage", serif;
+  text-align: center;
+  font-size: 1.25em;
+  color: var(--primaryTextColor);
+  font-family: "GC Protage", serif;
 }
 
 #CountdownContainer p {
-    font-size: 1em;
+  font-size: 1em;
 }
-
 
 /* Styles each section */
 #Section {
-    padding-top: 1%;
+  padding-top: 1%;
 }
 
 /* Styles section header */
 #Section h2 {
-    padding:1%;
-    color:var(--primaryTextColor);
-    text-align: center;
+  padding: 1%;
+  color: var(--primaryTextColor);
+  text-align: center;
 }
 
 /* Styles all countdown components */
-#Years, #Months, #Days, #Hours, #Minutes, #Seconds, p {
-    color: var(--primaryTextColor);
-    font-size: 2em;
-    font-family: "GC Protage", sans-serif;
-    padding:1%;
+#Years,
+#Months,
+#Days,
+#Hours,
+#Minutes,
+#Seconds,
+p {
+  color: var(--primaryTextColor);
+  font-size: 2em;
+  font-family: "GC Protage", sans-serif;
+  padding: 1%;
 }
 
 /* Media Queries */
 @media (width <= 800px) {
-    :root {
-        --primaryFont:"GC Protage";
-        --h1FontSize: 3em;
-        --h2FontSize: 1.5em;
-        --h3FontSize: 0.5em;
-        --pFontSize: 0.5em;
-        --primaryBgColor: #222;
-        --primaryTextColor:#f1f1f1;
-    }
+  :root {
+    --primaryFont: "GC Protage";
+    --h1FontSize: 3em;
+    --h2FontSize: 1.5em;
+    --h3FontSize: 0.5em;
+    --pFontSize: 0.5em;
+    --primaryBgColor: #222;
+    --primaryTextColor: #f1f1f1;
+  }
 
-    .bannerStrip h1 {
-        color:var(--primaryTextColor);
-        font-family: var(--primaryFont), serif;
-        text-align: center;
-        padding:1%;
-        font-size: 2em;
-    }
+  .bannerStrip h1 {
+    color: var(--primaryTextColor);
+    font-family: var(--primaryFont), serif;
+    text-align: center;
+    padding: 1%;
+    font-size: 2em;
+  }
 
-    .bannerStrip h2 {
-        padding:1%;
-        font-size: 1.5em;
-    }
+  .bannerStrip h2 {
+    padding: 1%;
+    font-size: 1.5em;
+  }
 
-    iframe {
-        width:100%;
-    }
+  iframe {
+    width: 100%;
+  }
 
-    p {
-        text-align: left;
-    }
+  p {
+    text-align: left;
+  }
 
-    .bannerStrip {
-        width:100%;
-        height:15dvh;
-        background-image: url("Images/ArtemisBanner.jpg");
-        background-position: center;
-    }
+  .bannerStrip {
+    width: 100%;
+    height: 15dvh;
+    background-image: url("Images/ArtemisBanner.jpg");
+    background-position: center;
+  }
 
-    .card h3 {
-        color: var(--primaryTextColor);
-        text-align: center;
-        font-family: var(--primaryFont), serif;
-        font-size: var(--h3FontSize);
-        padding:1%;
-    }
+  .card h3 {
+    color: var(--primaryTextColor);
+    text-align: center;
+    font-family: var(--primaryFont), serif;
+    font-size: var(--h3FontSize);
+    padding: 1%;
+  }
 
-    .card iframe, img {
-        zoom: 0.5;
-        border-radius: 10px;
-    }
+  .card iframe,
+  img {
+    zoom: 0.5;
+    border-radius: 10px;
+  }
 
-    .card p {
-        color:var(--primaryTextColor);
-        font-family: var(--primaryFont), sans-serif;
-        text-overflow: ellipsis;
-        overflow:hidden;
-        max-width: 270px;
-        white-space: nowrap !important;
-        font-size: var(--pFontSize);
-    }
+  .card p {
+    color: var(--primaryTextColor);
+    font-family: var(--primaryFont), sans-serif;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 270px;
+    white-space: nowrap !important;
+    font-size: var(--pFontSize);
+  }
 
-    .hubBubble {
-        width: 100%;
-        height:auto;
-        padding: 5px;
-    }
+  .hubBubble {
+    width: 100%;
+    height: auto;
+    padding: 5px;
+  }
 
-    .hubBubble:hover {
-        width:110%;
-    }
+  .hubBubble:hover {
+    width: 110%;
+  }
 
-    .rightSidePanelLayout .rightContent p {
-        font-size: 0.50em;
-    }
+  .rightSidePanelLayout .rightContent p {
+    font-size: 0.5em;
+  }
 
-    .missionOverview {
-        display:flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        width:90dvw;
-        margin:2%;
-        margin-left:auto;
-        margin-right:auto;
-        background-color: var(--primaryUIColor);
-        border-radius: 10px;
-        padding:1%;
-    }
+  .missionOverview {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 90dvw;
+    margin: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--primaryUIColor);
+    border-radius: 10px;
+    padding: 1%;
+  }
 
-    .missionOverview h3{
-        color: var(--primaryTextColor);
-        text-align: center;
+  .missionOverview h3 {
+    color: var(--primaryTextColor);
+    text-align: center;
+  }
 
-    }
+  .missionOverview p {
+    color: var(--primaryTextColor);
+    text-align: left;
+  }
 
-    .missionOverview p {
-        color: var(--primaryTextColor);
-        text-align: left;
-    }
+  .missionOverviewBlock h3 {
+    color: var(--primaryTextColor);
+    text-align: center;
+    font-size: var(--h3FontSize);
+  }
 
+  .missionOverviewContent {
+    display: flex;
+    flex-direction: column;
+  }
 
-    .missionOverviewBlock h3 {
-        color: var(--primaryTextColor);
-        text-align: center;
-        font-size: var(--h3FontSize);
+  .missionOverviewContent p {
+    font-size: 0.5em;
+    overflow: hidden;
+    max-lines: 1;
+    white-space: nowrap;
+    font-family: "GC Protage", sans-serif;
+  }
 
-    }
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
 
-    .missionOverviewContent {
-        display: flex;
-        flex-direction: column;
-    }
+  /* Styles the spacecraft container */
+  .sidePanel {
+    width: 90dvw;
+    background-color: var(--primaryUIColor);
+    margin: 2%;
+    padding: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
 
-    .missionOverviewContent p {
-        font-size: 0.5em;
-        overflow: hidden;
-        max-lines: 1;
-        white-space:nowrap;
-        font-family: "GC Protage", sans-serif;
-    }
+  .sidePanel h2 {
+    border-bottom: 2px solid #f5f5f5;
+  }
 
-    .row {
-        display: flex;
-        flex-direction: column;
-    }
+  .sidePanelRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 2px solid #f5f5f5;
+    border-bottom-style: solid;
+  }
 
-    /* Styles the spacecraft container */
-    .sidePanel {
-        width:90dvw;
-        background-color: var(--primaryUIColor);
-        margin:2%;
-        padding:10px;
-        border-radius: 10px;
-        overflow: hidden;
-    }
+  .rightSidePanelLayout {
+    width: 70dvw;
+    margin-left: 10dvw;
+    padding: 10px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
 
-    .sidePanel h2 {
-        border-bottom: 2px solid #f5f5f5;
-    }
+  .sidePanelRow p {
+    font-size: 0.75em;
+    font-family: "GC Protage", sans-serif;
+  }
 
-    .sidePanelRow {
-        display:flex;
-        flex-direction: row;
-        justify-content: space-between;
-        border-bottom: 2px solid #f5f5f5;
-        border-bottom-style: solid;
-        
-    }
+  .sidePanelRow h3 {
+    color: var(--primaryTextColor);
+  }
 
-    .rightSidePanelLayout {
-        width:70dvw;
-        margin-left:10dvw;
-        padding:10px;
-        margin-top:10px;
-        display:flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        background-repeat: no-repeat;
-        background-size: 100%;
-    }
+  .rightContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    margin-top: 20dvh;
+  }
 
-    .sidePanelRow p {
-        font-size: 0.75em;
-        font-family: "GC Protage", sans-serif;
-    }
+  .rightContent h4 {
+    font-size: 0.75em;
+    color: var(--primaryTextColor);
+    text-align: center;
+    padding-top: 30px;
+  }
 
-    .sidePanelRow h3 {
-        color: var(--primaryTextColor);
-    }
+  .rightContent h3 {
+    font-size: 0.75em;
+  }
 
-    .rightContent {
-        display: flex;
-        flex-direction: row;
-        justify-content: start;
-        margin-top: 20dvh;
-    }
-
-    .rightContent h4 {
-        font-size: 0.75em;
-        color:var(--primaryTextColor);
-        text-align: center;
-        padding-top: 30px;
-    }
-
-    .rightContent h3 {
-        font-size: 0.75em;
-    }
-
-    
-
-    #Countdown {
-    display:flex;
+  #Countdown {
+    display: flex;
     flex-direction: row;
     justify-content: center;
-}
+  }
 
-    /* Styles the countdown title */
-    #CountdownContainer {
-        display:flex;
-        flex-direction: column;
-        background-color: var(#222);
-        top:0;
-        position:sticky;
-        background-color: var(--primaryUIColor);
-    }
+  /* Styles the countdown title */
+  #CountdownContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: var(#222);
+    top: 0;
+    position: sticky;
+    background-color: var(--primaryUIColor);
+  }
 
-    #CountdownContainer h2 {
-        text-align:center;
-        font-size:1em;
-        color:var(--primaryTextColor);
-        font-family: "GC Protage", serif;
-    }
+  #CountdownContainer h2 {
+    text-align: center;
+    font-size: 1em;
+    color: var(--primaryTextColor);
+    font-family: "GC Protage", serif;
+  }
 
-    #CountdownContainer p {
-        font-size: 0.75em;
-    }
+  #CountdownContainer p {
+    font-size: 0.75em;
+  }
 
-    #LaunchStatus {
-        text-align:center;
-        font-size: 0.75em;
-        overflow:visible;
-    }
+  #LaunchStatus {
+    text-align: center;
+    font-size: 0.75em;
+    overflow: visible;
+  }
 
-    #Years, #Months, #Days, #Hours, #Minutes, #Seconds, p {
-        color: var(--primaryTextColor);
-        font-size: 1em;
-        font-family: "GC Protage", sans-serif;
-        padding:1%;
-    }
-
-    
+  #Years,
+  #Months,
+  #Days,
+  #Hours,
+  #Minutes,
+  #Seconds,
+  p {
+    color: var(--primaryTextColor);
+    font-size: 1em;
+    font-family: "GC Protage", sans-serif;
+    padding: 1%;
+  }
 }
