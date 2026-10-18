@@ -39,6 +39,7 @@ details h4 {
 }
 
 details p {
+  font-family: "GC Protage";
   font-size: var(--pFontSize);
   text-align: left;
 }
@@ -48,6 +49,13 @@ figcaption {
   font-family: "GC Protage", sans-serif;
   padding: 5px;
   font-size: var(--pFontSize);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "GC Protage";
 }
 
 h2 {
@@ -123,6 +131,7 @@ ul.timeline li {
   border-radius: 5px;
   display: flex;
   flex-direction: column;
+  margin: 1%;
   padding: 1%;
   width: 25%;
 }
@@ -139,7 +148,8 @@ ul.timeline li {
 }
 
 .blog a img {
-  height: fit-content;
+  height: 30dvh;
+  object-fit: cover;
   width: 100%;
 }
 
