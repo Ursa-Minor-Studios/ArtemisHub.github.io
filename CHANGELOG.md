@@ -1,5 +1,21 @@
 # Changelog
 
+## October 27, 2026 [v1.5.0]
+
+### Added
+
+- Third Artemis Blog
+
+### Changed
+
+- Font size for paragraphs and headings in blogs to make reading easier
+- Blogs now easier to read on mobile
+- Blog styling is now in common stylesheet instead of individual .html files
+
+### Removed
+
+- Old Navigation Hub Bubble from Moon Base Hub (Got replaced with bottom navigation bar)
+
 ## October 17, 2026 [v1.4.1]
 
 ### Added

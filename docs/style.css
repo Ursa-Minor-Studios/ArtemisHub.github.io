@@ -158,11 +158,43 @@ ul.timeline li {
   text-align: left;
 }
 
+.blogBody a {
+  color: white;
+  font-weight: bold;
+}
+.blogBody h1 {
+  color: white;
+  text-align: center;
+  font-size: 3em;
+}
+
+.blogBody h2 {
+  color: white;
+  text-align: center;
+  font-size: 2.75em;
+}
+
+.blogBody h3 {
+  color: white;
+  text-align: center;
+  font-size: 2.5em;
+}
+
+.blogBody img {
+  transform: translateX(70%);
+}
+
+.blogBody p {
+  font-size: 1.5em;
+  text-align: left;
+  width: 95ch;
+}
+
 .blogContainer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-e;
+  justify-content: space-evenly;
   margin: 2%;
 }
 
@@ -543,6 +575,50 @@ p {
     height: 15dvh;
     background-image: url("Images/ArtemisBanner.jpg");
     background-position: center;
+  }
+
+  .blogContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .blogBody img {
+    transform: translateX(5%);
+  }
+
+  .blogBody p {
+    width: 85%;
+    font-size: 0.75em;
+  }
+
+  .blogBody a {
+    color: white;
+    font-weight: bold;
+  }
+  .blogBody h1 {
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+    padding: 1%;
+    width: 90%;
+  }
+
+  .blogBody h2 {
+    color: white;
+    text-align: center;
+    padding: 1%;
+    font-size: 1.25em;
+  }
+
+  .blogBody h3 {
+    color: white;
+    text-align: center;
+    padding: 1%;
+    font-size: 1em;
+  }
+
+  .blog {
+    width: 95%;
   }
 
   .card h3 {
