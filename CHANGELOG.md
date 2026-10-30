@@ -1,5 +1,23 @@
 # Changelog
 
+## October 30, 2026 [v1.6.0]
+
+This is probably going to be the final large update for now, my focus is going to change to maintaining the website rather than adding new content. Created a launch schedule page and connected an actual domain to this website rather than the ".github.io" domain.
+
+### Added
+
+- Artemis launch schedule
+- Navbar links now highlight on hover
+- "Artemis Hub" word mark to navbar
+
+### Changed
+
+- Moved navbar to top
+- Worked on mobile responsiveness
+- Web domain is now "www.artemishub.space"
+
+---
+
 ## October 27, 2026 [v1.5.0]
 
 ### Added
@@ -15,6 +33,8 @@
 ### Removed
 
 - Old Navigation Hub Bubble from Moon Base Hub (Got replaced with bottom navigation bar)
+
+---
 
 ## October 17, 2026 [v1.4.1]
 

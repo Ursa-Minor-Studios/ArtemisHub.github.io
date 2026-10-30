@@ -24,7 +24,8 @@
 
 /* Styles the body */
 body {
-  background-color: var(--primaryBgColor);
+  background-color: #222;
+  max-width: 100dvw !important;
 }
 
 details {
@@ -93,6 +94,14 @@ ul.timeline li {
 }
 
 /* Classes */
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  height: 50dvh;
+  justify-content: space-evenly;
+  width: 100%;
+}
 
 /* Styles Banner Strips */
 .bannerStrip {
@@ -198,11 +207,50 @@ ul.timeline li {
   margin: 2%;
 }
 
-.bottomNavBar {
-  background-color: #333;
+.launchCard {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  margin: 5%;
 }
 
-.bottomNavBar ul {
+.launchContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1%;
+}
+
+.launchContainer h3 {
+  color: var(--primaryTextColor);
+  font-size: 1.5em;
+  padding: 1%;
+  text-align: center;
+}
+
+.launchContainer h4 {
+  color: var(--primaryTextColor);
+  font-size: 1.25em;
+  padding: 1%;
+  text-align: left;
+}
+
+.launchContainer p {
+  font-size: 1em;
+  padding: 1%;
+  text-align: left;
+}
+
+.navBar {
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.navBar ul {
+  align-items: center;
   display: flex;
   flex-direction: row;
   height: fit-content;
@@ -213,11 +261,28 @@ ul.timeline li {
   z-index: 999;
 }
 
-.bottomNavBar ul li {
+.navBar ul li {
   list-style-type: none;
+  padding: 1%;
 }
 
-.bottomNavBar ul li a {
+.navBar ul li:hover {
+  background-color: #222;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.navBar ul li a {
+  color: var(--primaryTextColor);
+  text-decoration: none;
+}
+
+.navBar ul p {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.navBar ul p a {
   color: var(--primaryTextColor);
   text-decoration: none;
 }
@@ -282,7 +347,7 @@ img {
   overflow-y: hidden;
   scrollbar-color: #444 var(--primaryBgColor);
   scrollbar-width: thin;
-  background-color: #4444441c;
+  background-color: transparent;
   padding-bottom: 1%;
 }
 
@@ -450,6 +515,23 @@ p {
   color: var(--primaryTextColor);
 }
 
+.statusBanner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 5%;
+  width: 90%;
+}
+
+.statusBanner .textSection {
+  background-color: transparent;
+  width: 100%;
+}
+
+.statusBanner h1 {
+  color: var(--primaryTextColor);
+}
+
 ul.status::marker {
   color: green;
 }
@@ -492,32 +574,36 @@ ul.status::marker {
 
 /* Styles the countdown title */
 #CountdownContainer {
+  background-color: #111;
+  border-radius: 5px;
   display: flex;
   flex-direction: column;
-  background-color: var(#222);
-  top: 0;
-  position: sticky;
-  background-color: var(--primaryUIColor);
+  padding: 1%;
+  transform: translateX(25%);
+  width: fit-content;
 }
 
 #CountdownContainer h2 {
   text-align: center;
-  font-size: 1.25em;
+  font-size: 2em;
   color: var(--primaryTextColor);
   font-family: "GC Protage", serif;
 }
 
 #CountdownContainer p {
-  font-size: 1em;
+  font-size: 1.5em;
 }
 
 /* Styles each section */
 #Section {
+  width: 100%;
   padding-top: 1%;
 }
 
 /* Styles section header */
 #Section h2 {
+  width: 90%;
+  position: relative;
   padding: 1%;
   color: var(--primaryTextColor);
   text-align: center;
@@ -568,6 +654,10 @@ p {
 
   p {
     text-align: left;
+  }
+
+  .banner {
+    height: 25dvh;
   }
 
   .bannerStrip {
@@ -645,6 +735,9 @@ p {
     font-size: var(--pFontSize);
   }
 
+  .carousel {
+    width: 100%;
+  }
   .hubBubble {
     width: 100%;
     height: auto;
@@ -653,6 +746,48 @@ p {
 
   .hubBubble:hover {
     width: 110%;
+  }
+
+  .launchCard {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5%;
+    margin-left: 0px;
+    width: 100dvw;
+    min-width: 0;
+  }
+
+  .launchCard img {
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+  }
+
+  .launchContainer {
+    margin: 0px;
+    padding: 0px;
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .launchContainer h3 {
+    font-size: 1em;
+    padding: 0px;
+    margin: 0px;
+    text-align: left;
+  }
+
+  .launchContainer h4 {
+    font-size: 0.75em;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .launchContainer p {
+    font-size: 0.5em;
+    padding: 0px;
+    margin: 0px;
   }
 
   .rightSidePanelLayout .rightContent p {
@@ -699,6 +834,26 @@ p {
     max-lines: 1;
     white-space: nowrap;
     font-family: "GC Protage", sans-serif;
+  }
+
+  .navBar {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    height: 5dvh;
+  }
+
+  .navBar ul {
+    width: 90%;
+  }
+
+  .navBar ul li {
+    font-size: 0.75em;
+  }
+
+  .navBar ul p {
+    font-size: 0.75em;
   }
 
   .row {
@@ -777,10 +932,12 @@ p {
   #CountdownContainer {
     display: flex;
     flex-direction: column;
+    transform: translateX(10%);
     background-color: var(#222);
     top: 0;
     position: sticky;
     background-color: var(--primaryUIColor);
+    width: 80dvw;
   }
 
   #CountdownContainer h2 {

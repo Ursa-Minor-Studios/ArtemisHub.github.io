@@ -11,42 +11,42 @@
       as="document" />
   </head>
   <body>
-    <div id="CountdownContainer">
-      <h2>Artemis III Launch</h2>
-      <div id="Countdown">
-        <p id="Years"></p>
-        <p id="Months"></p>
-        <p id="Days"></p>
-        <p id="Hours"></p>
-        <p id="Minutes"></p>
-        <p id="Seconds"></p>
-      </div>
-
-      <p id="LaunchStatus">
-        October 27, 2026 | NASA Provides Artemis III and Artemis Acceleration
-        Update
-      </p>
-    </div>
     <header>
-      <div
-        class="bannerStrip"
-        style="background-image: url(./Images/ArtemisBanner.jpg)">
-        <h1>Artemis</h1>
-        <h2>Back to the Moon and Beyond!</h2>
+      <div class="navBar">
+        <ul>
+          <p><a href="index.html">Artemis Hub</a></p>
+          <li><a href="Pages/moonBase.html">Moon Base</a></li>
+          <li><a href="Pages/launches.html">Launches</a></li>
+          <li><a href="Pages/blog.html" target="_blank">Blogs</a></li>
+          <li>
+            <a
+              href="https://github.com/Ursa-Minor-Studios/ArtemisHub.github.io/blob/main/CHANGELOG.md"
+              target="_blank"
+              >Changelog</a
+            >
+          </li>
+        </ul>
       </div>
     </header>
 
     <main>
-      <iframe
-        src="https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=v2%3A2PACX-1vQwdn-Bt68W4CV1RuC2aKkDG7Lzjl12CbLHAm43nu0qHfC-yEOnZzkSJxLzlWTnv2rcGYdfzC_FNEYM&font=Default&lang=en&initial_zoom=2&width=100%25&height=650"
-        width="100%"
-        height="650"
-        webkitallowfullscreen
-        mozallowfullscreen
-        allowfullscreen
-        frameborder="0"
-        loading="lazy"></iframe>
-
+      <div class="banner">
+        <div id="CountdownContainer">
+          <h2>Artemis III Launch</h2>
+          <div id="Countdown">
+            <p id="Years"></p>
+            <p id="Months"></p>
+            <p id="Days"></p>
+            <p id="Hours"></p>
+            <p id="Minutes"></p>
+            <p id="Seconds"></p>
+          </div>
+          <p id="LaunchStatus">
+            October 27, 2026 | NASA Provides Artemis III and Artemis
+            Acceleration Update
+          </p>
+        </div>
+      </div>
       <!--Upcoming Livestreams section-->
 
       <section id="Section">
@@ -152,7 +152,7 @@
             <h3>Artemis II</h3>
             <a href="Pages/artemisII.html">
               <img
-                src="Images/ArtemisIICover.jpg"
+                src="Images/ArtemisIICrew.jpg"
                 alt="Launch of The SLS rocket during Artemis II"
                 title="First crewed lunar mission since 1972 serving as a crewed test flight." />
             </a>
@@ -192,14 +192,6 @@
           </div>
         </div>
       </section>
-
-      <div class="bottomNavBar">
-        <ul>
-          <li><a href="index.html">Artemis Hub</a></li>
-          <li><a href="Pages/moonBase.html">Moon Base Hub</a></li>
-          <li><a href="Pages/blog.html">Blog</a></li>
-        </ul>
-      </div>
     </main>
     <script src="./Scripts/main.js"></script>
   </body>
