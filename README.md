@@ -13,7 +13,7 @@ https://github.com/user-attachments/assets/0cc67c83-c25b-404d-90e2-3a1dcdb8753f
 
 
 <p><b>Try it here!</b></p>
-<a href="https://polarisspacedev.github.io/ArtemisHub.github.io/">
+<a href="https://www.artemishub.space">
   <button>Demo</button>
 </a>
 
