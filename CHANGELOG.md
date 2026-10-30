@@ -16,6 +16,9 @@ This is probably going to be the final large update for now, my focus is going t
 - Worked on mobile responsiveness
 - Web domain is now "www.artemishub.space"
 
+### Removed
+- Artemis Timeline
+
 ---
 
 ## October 27, 2026 [v1.5.0]
